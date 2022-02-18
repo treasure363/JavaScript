@@ -32,12 +32,12 @@ Snake Case : Used in languages like C/C++, Python, and other low-level languages
 <br>
 
 # Operators
-=       : Assignment operator  
-==      : Equality operator  
-===     : Strict equality operator  
-<==     : Strictly lesser than operator  
-\>==     : Strictly greater than operator  
-!==     : Strictly not equal to  
+### =       : Assignment operator  
+### ==      : Equality operator  
+### ===     : Strict equality operator  
+### <==     : Strictly lesser than operator  
+### >==     : Strictly greater than operator  
+### !==     : Strictly not equal to  
 <br>
 
 > ### ***Day 2: 16/02/2022***
@@ -78,3 +78,117 @@ First the expression inside ${} part is executed then the normal strings is read
 ` --> Backtick, found under 
 <br>
 
+> ### ***Day 3: 18/02/2022***
+<br>
+
+# Functions
+Traditional Method  
+###Creation of function:  
+```JavaScript
+function functionName() {
+    //function body
+    //your code
+    //logical statements
+}
+/* 
+funtion     : keyword to declare the function
+functionName: name of the function with parenthesis()
+*/
+```
+<br>
+
+# Calling a Function
+```JavaScript
+functionName()
+/* When the function is called the body of that function is runs
+The function will run only when it is called
+*/
+```
+<br>
+
+# Function Parameters
+```JavaScript
+function greet(naam) {
+    console.log(`Hello ${naam}`)
+}
+greet('Ankit')  //Hello Ankit
+greet(6)        //Hello 6
+greet(6.25)     //Hello 6.25
+greet()         //Hello undefined
+
+function greet1(naam='JavaScript') {
+    console.log(`Hello ${naam}`)
+}
+greet1('Ankit')  //Hello Ankit
+greet1()         //Hello JavaScript
+
+/*
+Extras:
+When you are creating/defining the function the values inside the function parenthesis is called parameter [formal parameters]
+When you are calling the function the parenthesis values are called arguments [actual paramenters]
+*/
+```
+<br>
+
+# Return Statement
+These are used to return a single value when a function execution is finished.. Basically this is the value of the function
+<br>  
+### Syntax:  
+`return someValue` 
+
+```JavaScript
+const functionName_inTHeFormOf_variable = function(parameter){
+    function body
+}
+```
+<br>
+
+# Arrow Functions
+```JavaScript
+//empty function
+const greet = () => {}
+
+//print Hello value passed
+const greet = (naam) => {
+    console.log(`Hello ${naam}`)
+}
+
+//print Hello value and abcd as well
+const greet = naam => {
+    console.log(`Hello ${naam}`)
+    return 'abcd'
+}
+
+//returns Hello value when greet is called
+const greet = naam => `Hello ${naam}`
+```
+<br>
+
+# Arrays
+```JavaScript
+const array = ['Hello', 'Javascript', '🍎', '🐧', 21]
+//printing the array
+//['Hello', 'Javascript', '🍎', '🐧', 21]
+console.log(array)
+let value = '🍍'
+//adding an element at the ending
+//['Hello', 'Javascript', '🍎', '🐧', 21, '🍍']
+array.push(value)
+value = '👌'
+//adding an element at the beginning
+//['👌', 'Hello', 'Javascript', '🍎', '🐧', 21, '🍍']
+array.unshift(value)
+//print every elements in an array
+array.forEach(function(element){
+    console.log(element)
+})
+//print every element along with its index
+array.forEach((element, i) => {
+    console.log(element, i)
+})
+//check whether an element is present in the array or not
+const found = array.find( element => return element == '🍎'
+//print the index of an element
+array.indexOf(found)//returns the index of the first occurence of the element found
+```
+<br>
