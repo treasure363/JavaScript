@@ -2,7 +2,6 @@
 <br><br>
 
 > ## ***Day 1: 14/02/22***
-<br>
 
 # Comments in JS
 ### // is for Single line comments
@@ -51,7 +50,6 @@ Cases Used to define Variables
 <br>
 
 > ## ***Day 2: 16/02/2022***
-<br>
 
 # Booleans
 Consists of a *0* or *1*, *on* or *off*, *true* or *false*, etc.
@@ -88,12 +86,11 @@ Numbers with decimal point
 ```
 Inside-->Outside    
 First the expression inside ${} part is executed then the normal strings is read  
-` --> Backtick, found under 
+\` --> Backtick, found under 
 <br>
 <br>
 
 > ## ***Day 3: 18/02/2022***
-<br>
 
 # Functions
 ### Traditional Method  
