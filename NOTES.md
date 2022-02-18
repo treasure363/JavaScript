@@ -1,4 +1,6 @@
-> ### ***Day 1: 14/02/22***
+![alt text](logo.png)
+
+> ## ***Day 1: 14/02/22***
 <br>
 
 # Comments in JS
@@ -47,7 +49,7 @@ Cases Used to define Variables
 - !==     : Strictly not equal to  
 <br>
 
-> ### ***Day 2: 16/02/2022***
+> ## ***Day 2: 16/02/2022***
 <br>
 
 # Booleans
@@ -89,7 +91,7 @@ First the expression inside ${} part is executed then the normal strings is read
 <br>
 <br>
 
-> ### ***Day 3: 18/02/2022***
+> ## ***Day 3: 18/02/2022***
 <br>
 
 # Functions
