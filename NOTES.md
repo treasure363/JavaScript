@@ -141,22 +141,21 @@ When you are calling the function the parenthesis values are called arguments [a
 ```
 <br>
 
-# Functions as a Variable
-```JavaScript
-const greet = function(naam) {
-    console.log(`Hello ${naam}`)
-}
-```
-
 # Return Statement
 These are used to return a single value when a function execution is finished.. Basically this is the value of the function
-<br>  
 ### Syntax:  
-`return someValue` 
+```JavaScript
+return someValue
+``` 
+<br>
 
+# Function as a Variable
 ```JavaScript
 const functionName_inTHeFormOf_variable = function(parameter){
-    function body
+    //function body
+}
+const greet = function(naam) {
+    console.log(`Hello ${naam}`)
 }
 ```
 <br>
@@ -183,6 +182,7 @@ const greet = naam => `Hello ${naam}`
 <br>
 
 # Arrays
+Arrays in JS behave as a dynamic collection of heterogenous data since JS contains loosely typed data
 ```JavaScript
 const array = ['Hello', 'Javascript', '🍎', '🐧', 21]
 //printing the array
