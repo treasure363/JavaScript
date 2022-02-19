@@ -32,7 +32,7 @@ This is and example of Multi-line Comment
 Cases Used to define Variables  
 - Flat Case : If the variable name is only one word  
 - Lazy Case : Same as Flat Case  
-- Dash Case : Used in CSS  
+- Dash Case : Used in CSS, URLs  
 - Camel Case : Used in C#, JAVA, JavaScript  
 - Pascal Case : Title Case words joined. Used to name Classes  
 - Snake Case : Used in languages like C/C++, Python, and other low-level languages. To name files as well.
