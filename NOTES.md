@@ -6,7 +6,6 @@
 # Comments in JS
 ### // is for Single line comments
 ***Ctrl+/*** : Convert the selected line to single line comment  
-Eg: 
 ```JavaScript
 //this is a single line commenta
 ```
@@ -15,7 +14,6 @@ Eg:
 ### /* */ is for Multi-line comments  
 ***Shift+Alt+A*** : Toggle block comment[multi-line]
 Shortcut for comments in VS Code:  
-Eg: 
 ```JavaScript
 /*  
 Hi this is not a code  
