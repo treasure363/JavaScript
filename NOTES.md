@@ -6,7 +6,6 @@
 # Comments in JS
 ### // is for Single line comments
 ***Ctrl+/*** : Convert the selected line to single line comment  
-Eg: 
 ```JavaScript
 //this is a single line commenta
 ```
@@ -15,7 +14,6 @@ Eg:
 ### /* */ is for Multi-line comments  
 ***Shift+Alt+A*** : Toggle block comment[multi-line]
 Shortcut for comments in VS Code:  
-Eg: 
 ```JavaScript
 /*  
 Hi this is not a code  
@@ -34,7 +32,7 @@ This is and example of Multi-line Comment
 Cases Used to define Variables  
 - Flat Case : If the variable name is only one word  
 - Lazy Case : Same as Flat Case  
-- Dash Case : Used in CSS  
+- Dash Case : Used in CSS, URLs  
 - Camel Case : Used in C#, JAVA, JavaScript  
 - Pascal Case : Title Case words joined. Used to name Classes  
 - Snake Case : Used in languages like C/C++, Python, and other low-level languages. To name files as well.
@@ -44,7 +42,7 @@ Cases Used to define Variables
 - =       : Assignment operator  
 - ==      : Equality operator  
 - ===     : Strict equality operator  
-- <==     : Strictly lesser than operator  
+- \<==     : Strictly lesser than operator  
 - \>==     : Strictly greater than operator  
 - !==     : Strictly not equal to  
 <br>
@@ -86,7 +84,7 @@ Numbers with decimal point
 ```
 Inside-->Outside    
 First the expression inside ${} part is executed then the normal strings is read  
-\` --> Backtick, found under 
+\` called as Backtick, found below Escape Button.
 <br>
 <br>
 
@@ -111,7 +109,8 @@ functionName: name of the function with parenthesis()
 # Calling a Function
 ```JavaScript
 functionName()
-/* When the function is called the body of that function is runs
+/* 
+When the function is called the body of that function runs
 The function will run only when it is called
 */
 ```
@@ -145,7 +144,7 @@ When you are calling the function the parenthesis values are called arguments [a
 These are used to return a single value when a function execution is finished.. Basically this is the value of the function
 ### Syntax:  
 ```JavaScript
-return someValue
+return someValue//inside a function
 ``` 
 <br>
 
@@ -154,9 +153,11 @@ return someValue
 const functionName_inTHeFormOf_variable = function(parameter){
     //function body
 }
+greet()//calling the function
 const greet = function(naam) {
     console.log(`Hello ${naam}`)
 }
+greet('Ankit')//calling the function with argument
 ```
 <br>
 
