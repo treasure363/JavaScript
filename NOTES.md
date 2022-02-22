@@ -188,25 +188,57 @@ const array = ['Hello', 'Javascript', '🍎', '🐧', 21]
 //printing the array
 //['Hello', 'Javascript', '🍎', '🐧', 21]
 console.log(array)
+
 let value = '🍍'
 //adding an element at the ending
 //['Hello', 'Javascript', '🍎', '🐧', 21, '🍍']
 array.push(value)
-value = '👌'
+
 //adding an element at the beginning
 //['👌', 'Hello', 'Javascript', '🍎', '🐧', 21, '🍍']
+value = '👌'
 array.unshift(value)
+
 //print every elements in an array
 array.forEach(function(element){
     console.log(element)
 })
+array.forEach(element => console.log(element))//arrow function for the same
+
 //print every element along with its index
 array.forEach((element, i) => {
     console.log(element, i)
 })
-//check whether an element is present in the array or not
-const found = array.find( element => return element == '🍎'
+
+//checks whether an element is present in the array or not and returns it when first occurence is found..
+//find() returns the value if found otherwise undefined is returned
+const found = array.find( element => return element == '🍎')
+const found = array.find( element => return typeof element == 21)
+
 //print the index of an element
 array.indexOf(found)//returns the index of the first occurence of the element found
+//returns all the true value in the form of an array
+const found = array.filter( element => return typeof element == 21)
+
+//map() is used as modified version of forEach() which can return values
+array.map( element => return element+'🌼')
+
+//to convert n dimensional array to n-1 array
+console.log(array.flat(1))
+//to convert n dimensional array to n-2 array
+console.log(array.flat(2))
+//to convert n dimensional array to 1d array
+console.log(array.flat(Infiniity))
+
+//to remove the last element of an array and modify the array
+array.pop()
+console.log(array.pop())//pops the last element and returns that element which is logged
+
+//to remove the first element and modify the array
+array.shift()
+console.log(array.shift())//removes the first element and returns that element which is logged
+
+//to reverse an array
+array.reverse()
 ```
 <br>
