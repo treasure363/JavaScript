@@ -243,3 +243,59 @@ console.log(array.shift())//removes the first element and returns that element w
 array.reverse()
 ```
 <br>
+
+> ## ***Day 4: 21/02/2022***
+
+# Loops
+
+### `for in loop`
+```JavaScript
+for (const num in array){
+    //num = 0, 1, 2, 3, 4, 5....
+    console.log(array[num])
+}
+
+//to update the value in array
+for (const num in array){
+    array[num] = array[num]+'🧟'    
+}
+console.log(array)
+```
+<br>
+
+### `for of loop`
+```JavaScript
+for (const num of array){
+    //num= element at index 1, element at index 2, element at index 3.....
+    console.log(num)
+}
+
+//to also track the index of the elements as well
+let index = 0
+for (const num of array){
+    index = array.indexOf(num)
+    console.log(`${num} : ${index}`)
+}
+
+//to update value at an index using for of
+let index = 0
+for (const num of array){
+    index = array.indexOf(num)
+    array[index] = num + '🧟'
+}
+console.log(array)
+```
+<br>
+
+### Iterating over string
+```JavaScript
+const naam = 'Hello World!' 
+for (const i in naam){
+    console.log(naam[i])
+}
+for (const charAtIndex of naam){
+    console.log(charAtIndex)
+}
+```
+<br>
+
