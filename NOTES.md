@@ -644,3 +644,62 @@ console.log(status)
 const
 ```
 <br>
+
+> ### ***Day 7: 02/03/2022***
+Features of Promises  
+Promise Chains  
+Drawback sessions [2]  
+Async and Await  
+ordeer matters for catch  
+finally order does not matter it will run after every promise is over  
+[Need to make notes]
+
+> ### ***Day 8: 04/03/2022***
+# Spread operator
+Unpacks and returns each individual element of an iterable
+
+//syntax
+```JavaScript
+...anIterable
+//returns a single string consisting of every values in anIterable
+```
+
+```JavaScript
+const arrOne = ['javascript', 'linux', 'docker']
+console.log(arrOne)//['javascript', 'linux', 'docker']
+console.log(... arrOne)// vasanth javascript linux docker
+console.log('javascript', 'linux', 'docker')// javascript linux docker
+const arrTwo = ['kubernetes', 'tailwindcss', 'vite', 'solidjs']
+console.log(arrOne.concat(arrTwo))// both arrays are joined in a third array and printed
+console.log( [... arrOne, ... arrTwo ])// same output both arrays are joined
+
+function joinArray (a, b) {
+    return [ ...a, ...b]
+}
+console.log(joinArray(arrOne, arrTwo))
+
+
+//OBJECT
+const objOne = {
+    javascript: '✨',
+    linux: '🐧',
+    docker: '🐋',
+}
+const objTwo = {
+    kubernetes: '🚀',
+    tailwind: '🖌️',
+    vite: '⚡',
+    solidjs: '🌏',
+}
+
+console.log(objOne, objTwo)
+console.log(...objOne)//does not work
+console.log({...objOne, ...objTwo})
+
+
+const static = {
+    name: 'Ankit'
+}
+console.log({...static, ...{name: 'Vasanth'}})
+console.log(static)
+```
