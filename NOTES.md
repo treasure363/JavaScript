@@ -287,7 +287,7 @@ console.log(array)
 ```
 <br>
 
-### Iterating over string
+# Iterating over string
 ```JavaScript
 const naam = 'Hello World!' 
 for (const i in naam){
@@ -296,6 +296,154 @@ for (const i in naam){
 for (const charAtIndex of naam){
     console.log(charAtIndex)
 }
+```
+<br>
+
+## ***Day 5: 23/02/2022***
+
+# If Condition
+```JavaScript
+//syntax
+if (test condition) {
+    true block
+    statements
+}
+//or
+if (test condition) {
+    true block
+    statements
+} else {
+    false block
+    statements
+}
+
+//example
+const lang = 'JavaScript'
+console.log(lang == 'JavaScript')//true
+console.log(lang == 'Javacript')//false
+if (lang == 'JavaScript') {
+    console.log(`${lang} is 😍`)//lang needs to be JavaScript to run this line
+} else {
+    console.log(`${lang} is 🤷‍♂️`)//this line will run when lang is not JavaScript
+}
+```
+<br>
+
+# Else-If Ladder
+```JavaScript
+const lang = 'JavaScript'
+//syntax
+console.log(lang == 'JavaScript')//true
+console.log(lang == 'Javacript')//false
+if (lang == 'JavaScript') {
+    console.log(`${lang} is 😍`)//lang needs to be JavaScript to run this line
+} else if (lang == 'Python') {
+    console.log(`${lang} is 🐍`)//lang needs to be Python for this line to be executed
+} else {
+    console.log(`${lang} is 🤷‍♂️`)//this line will run when lang is not JavaScript
+}
+```
+<br>
+
+# Switch Case:
+```JavaScript
+//syntax
+switch(variable) {
+    case #1: true block
+            break
+    case #2: true block
+            break
+    ..
+    ..
+    ..
+    default: default block
+            break
+}
+
+//example
+const lang = 'JavaScript'
+switch (lang) {
+    case 'JavaScript':
+        console.log(`${lang} is 😍`)
+        break
+    case 'Python':
+        console.log(`${lang} is 🐍`)
+        break
+    default:
+        console.log(`${lang} is 🤷‍♂️`)
+        break
+}
+```
+
+Extras:
+computation in switch happens only once
+in if every time condition is checked and referenced if variables are used
+hence switch is faster than if
+in switch the variables passed is read only once.. but in if else the variables is read as many times as it is used
+<br>
+
+# While Loop
+```JavaScript
+//syntax
+while(test condition) {
+    loop body
+    updation of control variable
+}
+
+//infinite loop to break js
+while (true) {
+    console.log('broken!')
+}
+
+//ice cream
+let ice = ''
+
+while (ice != '🍧🍧🍧🍧') {
+    ice += '🍧'
+    console.log(ice)
+}
+
+//same code in for loop
+ice = ''
+for (let i=0; i < 4; ++i) {
+    ice += '🍧'
+    console.log(ice)
+}
+```
+<br>
+
+# Dates
+How is time calculated in computer?
+It is calculated using UNIX Epoch and the unit is ns or ms 
+On Jan 1st 1970 computers started to track time, b4 that computer didn't know time..
+int epoch = 0; [on all OS this was done]
+for every single ms it was updated by 1, basically 1 tick at a time
+this way we track time
+Click here to know the current [Epoch](https://www.unixtimestamp.com/index.php)
+```JavaScript
+const d = new Date()        //date is a class and is initialzied
+console.log(d)              //print the object
+console.log(d.toString())   //print the current date time timezone
+console.log(d.getHours())   //24hrs format
+console.log(d.getHours()-12)//12hrs format
+//if hrs>12 PM hrs<12 AM
+console.log(d.getMinutes())
+console.log(d.getMilliseconds())
+console.log(d.getMilliseconds())
+console.log(d.getFullyear())
+
+//setInterval(): to repeat a particular block of code/function at the particular interval of time
+//syntax
+setInterval(function to perform, after x milliseconds)
+
+//example
+setInterval(() => {
+    console.log('hello')
+}, 1000)
+
+//loading particular date as an object, need to pass epoch or exact date values
+const d = new Date(2005, 6, 16, 6, 22, 20, 20)
+const d = new Date(epoch value milliseconds one)
 ```
 <br>
 
