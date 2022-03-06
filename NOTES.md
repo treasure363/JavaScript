@@ -558,3 +558,89 @@ for (const keyValue in person.entries()){
 | Pair type: (String, Anything) | Pair type: (Anything, Anything) |  
 | Not that complex and used more | Can get complex and is used rarely |  
 <br>
+
+> ## ***Day 7: 01/03/2022***
+
+# JS as an Asynchronous language
+Javascript by means is asynchronous  
+Every line of code starts executing at the same time and does not wait for the previous line exceution to finish  
+for eg:  
+firstFunction() // takes a second  
+secondFunction() // takes 3 seconds  
+total time taken is 3 seconds only when the program is ran  
+
+Although individual lines are executed independently JS does not wait for one to finsih it executes every line together  
+
+Application of callback: whenever t here is a job which u dont know how much time it will take then use it    
+           
+Eg: Facebook friends fetch example
+we dont know how long the action will take to get ur fb friends
+<br>
+
+# Callbacks
+```JavaScript
+//callbacks
+const getMessage = () => {
+    return 'job done'
+}
+
+const msg = getMessage()//runs immediately
+// const msg - 'job done'
+console.log(msg)
+
+const timeTakingFunction = () => {
+    setTimeout(() => {
+        return 'job done'
+    }, 2000)
+
+    return
+}
+
+const timeTakingFunction = (callback) => {
+    setTimeout(() => {
+        callback('job done')
+    }, 2000)
+
+    return
+}
+
+
+timeTakingFunction((msg) => {
+    console.log(msg)
+})
+```
+<br>
+
+# Promises
+A promise has three states:  
+* Pending   (running)  
+* Resolved  (finished)  
+* Rejected  (error)  
+
+we heavily rely on top of callbacks.. it is there to prevent callback hell
+```JavaScript
+promiseFunction()
+    .then((msg) => {
+        console.log(`msg : ${msg}`)
+    })
+
+const promiseFunction = () => {
+    setTimeout(() => {
+
+    }, 2000)
+}
+const status = promiseFunction()
+console.log(status)
+
+
+const promiseFunction = () => {
+    setTimeout(() => {
+
+    }, 2000)
+}
+const status = promiseFunction()
+console.log(status)
+
+const
+```
+<br>
