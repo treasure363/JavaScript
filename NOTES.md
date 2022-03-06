@@ -299,7 +299,7 @@ for (const charAtIndex of naam){
 ```
 <br>
 
-## ***Day 5: 23/02/2022***
+> ## ***Day 5: 23/02/2022***
 
 # If Condition
 ```JavaScript
@@ -447,3 +447,114 @@ const d = new Date(epoch value milliseconds one)
 ```
 <br>
 
+> ## ***Day 6: 25/02/2022***
+
+# JSON Objects
+JSON is an open standard file format and data interchange format that uses human-readable text to store and transmit data objects consisting of attribute–value pairs and arrays. It is a common data format with diverse uses in electronic data interchange, including that of web applications with servers.  
+In short they are (key, value) pairs, values can be accessed by knowing the keys
+```JavaScript
+//comparing Arrays and JSON objects
+//example1
+const fruitsArray = ['🍏', '🥭', '🍎', '🍌', '🍍']
+const fruitsObject = {
+    greenApple: '🍏',
+    mango: '🥭',
+    apple: '🍎',
+    banana: '🍌',
+    pineapple: '🍍'
+}
+console.log(fruitsObject.pineapple)//order does not matter
+console.log(fruitsObject['pineapple'])
+console.log(fruitsArray[4])//order does not matter
+
+//example2
+const arr = ['Ravi', 21, ['javascript', 'linux'], '🍫']
+const person = {
+    name: 'Ravi',
+    age: 21,
+    interests: ['javascript', 'linux'],
+    favEmoji: '🍫',
+}
+console.log(person)
+console.log(person.name)
+console.log(arr)
+console.log(arr[0])
+
+//adding new attribute to JSON Object. It can store anything just like an array
+person.job = 'JS Dev'
+person['gender'] = 'M'
+person.interests.push['music']
+
+//loop through individual key in an object
+for (const key in person){
+    console.log(key)
+}
+
+//to access the values of the keys in for in loop
+for (const key in person){
+    const value = person[key]
+    console.log(key, value)
+}
+```
+<br>
+
+# Maps
+Map is a collection of elements where each element is stored as a Key, value pair. Map object can hold both objects and primitive values as either key or value. When we iterate over the map object it returns the key, value pair in the same order as inserted.
+```JavaScript
+//syntax
+new Map([
+    [key1, value1],
+    [key2, value2],
+    ..
+    ..
+    ..
+    [key_n, value_n],
+])
+
+//example
+const personMap = new Map([
+    ['name', 'Ravi'],
+    ['age', 21],
+    ['interests', ['javascript', 'linux']],
+    ['favEmoji', '🍫'],
+    ['favColor', new Map([
+        ['first', 'blue'],
+        ['second', 'black']
+    ])]
+])
+
+//printing map attributes
+console.log(personMap)//whole map is printed
+console.log(personMap.size)//5
+console.log(personMap.get('name'))//Ravi
+console.log(personMap.get('favColor'))//prints a map
+
+//function chaining: basically the next function takes the input which is returned by the previous function
+console.log(personMap.get('favColor').get('first'))//prints a value 
+
+//writing to a map syntax
+Array.push(value)
+Object[key] = value
+Map.set(key, value)
+personMap('job', 'JS Dev')
+
+//traverse through Map
+//just like for object using for of is invalid, in Map we dont use for in rather we use for of
+for (const keyValue in person.entries()){
+    const key = keyValue[0]
+    const value = keyValue[1]
+    console.log(keyValue)
+    console.log({key:value})
+}
+```
+
+# JSON Object vs Maps
+| JSON Object | Maps |  
+| :---------: | :--: |  
+| Objects are slightly slower | Maps are faster than object |  
+| Length can't be known directly | Maps length can be known |  
+| Unordered structure | Ordered Structure |  
+| Can't use for of | For of is often used |  
+| Pair type: (String, Anything) | Pair type: (Anything, Anything) |  
+| Not that complex and used more | Can get complex and is used rarely |  
+<br>
