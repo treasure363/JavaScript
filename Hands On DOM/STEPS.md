@@ -40,16 +40,20 @@ If it's highlighted blue, then it means that you are ready to select an element 
 It'll open up the part of HTML code on the Element tab in Inspector
 - Right Click on the <div> tag and Click `Edit as HTML`  
 <img title="a title" alt="Alt text" src="./media\6 Edit as HTML.png">     
+
 It'll open up the Editor
 - Select all [Ctrl + A] and delete. Now we'll write our own code here.  
-<img title="a title" alt="Alt text" src="./media\7 Empty.png">     
+<img title="a title" alt="Alt text" src="./media\7 Empty.png">   
+
 - Copy and Paste this HTML Code:
+
 ```HTML
 <div class="card-footer">
     <input type="button" value="Attendance!" class="btn btn-info float-left" onclick="calculate()">
     <input type="button" value="Go back!" class="btn btn-info float-right" onclick="history.back()">
 </div>
 ```
+  
 After this click anywhere on the inspector outside the editing area.  
 For Eg: Click on the `<!-- /.card-body -->` which is a comment highlighted as green<br>    
 <img title="a title" alt="Alt text" src="./media\8 HTML Updated.png">     
