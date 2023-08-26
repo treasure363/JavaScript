@@ -14,14 +14,14 @@ I am using Microsoft Edge browser.
 <img title="a title" alt="Alt text" src="./media/1 Inspector.png">  
 - In the URL bar go to `https://gietuerp.in/`  
 
-** Make sure that your device is in desktop mode only.
+** Make sure that your device is in desktop mode only.  
 <img title="a title" alt="Alt text" src="./media\2 Device View.png">  
 If it's highlighted as Blue then the browser view is changed to Phone/Tablet.  
 We'll be using Desktop View so make sure it's not highlighted.
 
 ## Step 2
 - Login with your credentials
-- Go to `Attendance Details` and then `View Subject Wise Attendance` 
+- Go to `Attendance Details` and then `View Subject Wise Attendance`  
 <img title="a title" alt="Alt text" src="./media\3 View Attendance.png">
 
 #### Goal
@@ -32,16 +32,16 @@ Step 2: Add JS code in the console which will be doing all the calculations.
 `Step 1 is optional` we can use the console only to find the required details, but it is mandatory to analyse the HTML file first and to give it a `GUI` we are adding a button otherwise JS Console will only do the work.  
 
 ## Step 3
-- Click on `Select an Element` in the top left corner of the Inspector.  
+- Click on `Select an Element` in the top left corner of the Inspector.    
 <img title="a title" alt="Alt text" src="./media\4 Select Element.png">  
 If it's highlighted blue, then it means that you are ready to select an element from the web page
-- Hover over the `Go back!` Button on the web page and when it's highlighted click on it.
+- Hover over the `Go back!` Button on the web page and when it's highlighted click on it.  
 <img title="a title" alt="Alt text" src="./media\5 Selected Button.png">   
 It'll open up the part of HTML code on the Element tab in Inspector
-- Right Click on the <div> tag and Click `Edit as HTML`
+- Right Click on the <div> tag and Click `Edit as HTML`  
 <img title="a title" alt="Alt text" src="./media\6 Edit as HTML.png">   
 It'll open up the Editor
-- Select all [Ctrl + A] and delete. Now we'll write our own code here.
+- Select all [Ctrl + A] and delete. Now we'll write our own code here.  
 <img title="a title" alt="Alt text" src="./media\7 Empty.png">   
 - Copy and Paste this HTML Code:
 ```HTML
@@ -51,7 +51,7 @@ It'll open up the Editor
 </div>
 ```
 After this click anywhere on the inspector outside the editing area.  
-For Eg: Click on the `<!-- /.card-body -->` which is a comment highlighted as green<br>  
+For Eg: Click on the `<!-- /.card-body -->` which is a comment highlighted as green<br>    
 <img title="a title" alt="Alt text" src="./media\8 HTML Updated.png">   
 
 ## Step 4
@@ -78,7 +78,7 @@ function calculate() {
 
     alert(msg)
 }
-```
+```  
 <img title="a title" alt="Alt text" src="./media\9 JS code.png">   
 
 ## Done!
