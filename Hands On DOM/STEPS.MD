@@ -10,8 +10,8 @@ I am using Microsoft Edge browser.
 
 ## Step 1
 - Open a new tab [Ctrl + T]
-- Open Browser Inspector [Ctrl + Shift + I]  
-<img title="a title" alt="Alt text" src="./media/1 Inspector.png">
+- Open Browser Inspector [Ctrl + Shift + I]   
+<img title="a title" alt="Alt text" src="./media/1 Inspector.png">  
 - In the URL bar go to `https://gietuerp.in/`  
 
 ** Make sure that your device is in desktop mode only.
@@ -39,7 +39,7 @@ If it's highlighted blue, then it means that you are ready to select an element 
 <img title="a title" alt="Alt text" src="./media\5 Selected Button.png">   
 It'll open up the part of HTML code on the Element tab in Inspector
 - Right Click on the <div> tag and Click `Edit as HTML`
-<img title="a title" alt="Alt text" src="./media\6 Edit as HTMl.png">   
+<img title="a title" alt="Alt text" src="./media\6 Edit as HTML.png">   
 It'll open up the Editor
 - Select all [Ctrl + A] and delete. Now we'll write our own code here.
 <img title="a title" alt="Alt text" src="./media\7 Empty.png">   
